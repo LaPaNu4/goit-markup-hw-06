@@ -488,6 +488,17 @@ h1.hidden {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  fill: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover {
+  background-color: #404bbf;
+  fill: #ffffff;
 }
 .is-hidden {
   opacity: 0;
@@ -547,8 +558,10 @@ h1.hidden {
   margin-top: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
   outline: none;
+  padding-left: 16px;
 }
 .modal-title {
   font-weight: 500;
@@ -673,5 +686,6 @@ h1.hidden {
   fill: #f4f4fd;
 }
 .pp-link {
-  margin-left: 1px;
+  margin-left: 4px;
+  color: #4d5ae5;
 }
